@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "No Overview",
+  "description": "Search without AI overview",
+  "version": "0.0.1",
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback"
+  ],
+  "icons": { "16": "no_overview16.png",
+          "128": "no_overview128.png" },
+          
+  "host_permissions": [
+    "https://www.google.com/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [{
+      "id": "ruleset1",
+      "enabled": true,
+      "path": "ruleset1.json"
+    }]
+  }
+}
